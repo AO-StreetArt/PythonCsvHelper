@@ -6,5 +6,4 @@ python:
   - "pypy"
 script:
   - python CsvHelper.py config.ini
-  - cat test/file1-new.csv
   - cat test/file2-new.csv
