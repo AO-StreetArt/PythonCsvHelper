@@ -2,8 +2,12 @@ import csv
 import sys
 import os
 import traceback
-import ConfigParser
 import time
+
+if sys.version_info[0] < 3:
+    import ConfigParser
+else:
+    import configparser
 
 # Helper function to get an exception
 def get_exception():
