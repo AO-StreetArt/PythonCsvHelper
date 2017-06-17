@@ -7,7 +7,7 @@ import time
 if sys.version_info[0] < 3:
     import ConfigParser
 else:
-    import configparser
+    import configparser as ConfigParser
 
 # Helper function to get an exception
 def get_exception():
