@@ -88,7 +88,5 @@ if __name__ == "__main__":
     end_time = time.time()
 
     print("Script finished successfully")
-
-    print("Script finished successfully")
     print("Run Time: %s" % (end_time - start_time))
     print("Configuration Time: %s" % (config_end_time - start_time))
