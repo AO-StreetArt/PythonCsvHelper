@@ -23,11 +23,13 @@ if __name__ == "__main__":
     csv_column1 = None
     csv_column2 = None
 
+    print(sys.argv)
+
     # Determine the config file path
     if len(sys.argv) == 2:
+
         config_file_name = sys.argv[1]
 
-    if config_file_name is not None:
         # Read the config file
         config = ConfigParser.ConfigParser()
         config.read(config_file_name)
@@ -51,7 +53,7 @@ if __name__ == "__main__":
         csv_column2 = int(sys.argv[4])
 
     # Exit if we don't have a CSV File or Column
-    if not csv_file_name1 or not csv_file_name2 or not csv_column1 or not csv_column2:
+    if csv_file_name1 is None or csv_file_name2 is None or csv_column1 is None or csv_column2 is None:
         print("Exiting as required configuration data is not present")
         sys.exit(1)
 
